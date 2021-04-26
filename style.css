@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  width: 100%;
+}
+.my-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.analog-area {
+  background-image: url(./images/Analog\ Dial.png);
+  width: 600px;
+  height: 540px;
+  background-size: contain;
+  position: relative;
+}
+.hands {
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform-origin: left;
+}
+.hours-hand {
+  width: 150px;
+  height: 2px;
+  border: 3px solid black;
+  top: calc(50% - 2px);
+}
+.minutes-hand {
+  width: 180px;
+  height: 1px;
+  border: 2px solid black;
+  top: calc(50% - 1px);
+}
+.seconds-hand {
+  width: 180px;
+  height: 1px;
+  border: 2px solid red;
+  top: 50%;
+}
+.milliseconds-hand {
+  width: 180px;
+  height: 3px;
+  border: 2px dotted #0a00ff;
+  top: 50%;
+}
