@@ -11,9 +11,9 @@
   align-items: center;
 }
 .analog-area {
-  background-image: url(./images/Analog\ Dial.png);
-  width: 600px;
-  height: 540px;
+  background-image: url(./images/fancyClock.jpg);
+  width: 370px;
+  height: 650px;
   background-size: contain;
   position: relative;
 }
@@ -21,29 +21,30 @@
   position: absolute;
   border-radius: 50%;
   left: 50%;
+  top: 53%;
   transform-origin: left;
+  border: 3px solid white;
+  background-color: white;
 }
 .hours-hand {
-  width: 150px;
+  width: 80px;
   height: 2px;
-  border: 3px solid black;
-  top: calc(50% - 2px);
+  top: calc(53% - 2px);
 }
 .minutes-hand {
-  width: 180px;
+  width: 130px;
   height: 1px;
-  border: 2px solid black;
-  top: calc(50% - 1px);
+  top: calc(53% - 1px);
 }
 .seconds-hand {
-  width: 180px;
+  width: 130px;
   height: 1px;
-  border: 2px solid red;
-  top: 50%;
+  border-color: maroon;
+  background-color: maroon;
 }
 .milliseconds-hand {
-  width: 180px;
-  height: 3px;
-  border: 2px dotted #0a00ff;
-  top: 50%;
+  width: 47px;
+  height: 0px;
+  border-color: rgb(180, 180, 200);
+  transition: 10ms transform;
 }
