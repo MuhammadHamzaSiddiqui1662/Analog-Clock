@@ -16,6 +16,7 @@
   height: 650px;
   background-size: contain;
   position: relative;
+  margin-top: 50px;
 }
 .hands {
   position: absolute;
@@ -25,6 +26,7 @@
   transform-origin: left;
   border: 3px solid white;
   background-color: white;
+  z-index: 100;
 }
 .hours-hand {
   width: 80px;
@@ -47,4 +49,29 @@
   height: 0px;
   border-color: rgb(180, 180, 200);
   transition: 10ms transform;
+}
+
+.digital-area {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 85px;
+  height: 35px;
+  color: white;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 900;
+  position: absolute;
+  left: 38%;
+  top: 38%;
+  background-color: #202832;
+  border: 3px solid black;
+  box-shadow: 0px 0px 10px -1px black inset;
+}
+
+@media screen and (max-width: 500px) {
+  .analog-area {
+    width: 285px;
+    height: 505px;
+  }
 }
