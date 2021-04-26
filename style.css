@@ -74,4 +74,17 @@
     width: 285px;
     height: 505px;
   }
+  .digital-area {
+    left: 34%;
+  }
+  .hours-hand {
+    width: 50px;
+  }
+  .minutes-hand,
+  .seconds-hand {
+    width: 100px;
+  }
+  .milliseconds-hand {
+    width: 30px;
+  }
 }
